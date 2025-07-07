@@ -1,0 +1,995 @@
+.employer {
+  font-size: 1vw;
+  color: #0080d2;
+  font-style: italic;
+}
+.profiledescription {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 1.2vw;
+  width: 90%;
+  background-color: rgb(189 198 218);
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+.time {
+  font-size: 1vw;
+  color: #0080d2;
+  font-style: italic;
+}
+
+.buttoncols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+}
+.model-title {
+  background-color: #6984b1;
+  padding: 15px;
+}
+
+.model-subtitle {
+  background-color: #87a5d6;
+  padding: 7px;
+  color: black;
+  font-size: 1.5vw;
+  font-style: italic;
+}
+.model-skills {
+  background-color: #c8dbfa;
+  padding: 7px;
+  line-height: 2;
+}
+
+skill {
+  background-color: #a8c3ef;
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: black;
+}
+
+h3 {
+  font-size: 2vw;
+  color: #032747;
+  font-family: "Quicksand", sans-serif;
+}
+.buttonCol {
+  width: 31%;
+  margin: 2px;
+}
+
+.expCol {
+  width: 48%;
+  margin: 2px;
+}
+.employRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.employRow2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.posTitle {
+  font-weight: bold;
+  font-size: 1.2vw;
+  padding-bottom: 0.5vw;
+}
+
+.experienceBlue {
+  background: rgb(116 145 173);
+  color: #032747;
+}
+
+.r1green {
+  background: #619090;
+  color: #244141;
+}
+.r2green {
+  background: #4a7777;
+  color: #1b2e2e;
+}
+.r3green {
+  background: #355959;
+  color: #8eacaa;
+}
+.r1blue {
+  background: #436d93;
+}
+.r2blue {
+  background: #2e4d68;
+}
+.r3blue {
+  background: #233a4f;
+}
+.white {
+  background: #ffffff;
+}
+.bluegray {
+  background: #6b7282;
+}
+.purple {
+  background: #4f6da1;
+}
+
+.datedExperience {
+  height: 6.2vw;
+}
+.green {
+  background: #4a7777;
+}
+.purple1 {
+  background: #7184a5;
+}
+.row2purple1 {
+  background: #6a7ba3;
+}
+
+.row1grey {
+  background: #80899c;
+}
+.row2grey {
+  background: #69707e;
+}
+
+.blue {
+  background: #bcc8dc;
+}
+
+/*
+.empButton.purple: hover {
+  background: #738fba;
+}
+.empButton.purple:active {
+  background: #527aba;
+}
+.empButton.white:hover {
+  background: #ededf0;
+}
+
+.empButton.white:active {
+  background: #dcdcde;
+}*/
+
+/*employment buttons*/
+.empButton {
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-direction: column;
+  height: auto;
+  width: 16%;
+}
+.empButton:hover {
+  filter: brightness(85%);
+}
+.empButton:active {
+  filter: brightness(60%);
+}
+
+.empButton__text,
+.empButton__icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 2%;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.empButton__icon {
+  font-size: 1.5em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.08);
+}
+.empImage {
+  margin: 1vw;
+  width: 10vw;
+}
+
+.experienceBubble {
+  padding: 0;
+  /*background: #009578;*/
+  margin: 5px;
+  border: none;
+  align-items: center;
+  outline: none;
+  border-radius: 10vw;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 500;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 3fr 1fr;
+}
+.experienceBubble__text {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 20vw;
+  text-align: center;
+}
+.expEmployer {
+  font-style: italic;
+  font-weight: initial;
+  /* font-size: smaller; */
+  font-size: 1vw;
+}
+
+.whiteText {
+  color: #c2d8ec;
+}
+
+.experienceBubble__icon {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 100%;
+  color: #fff;
+}
+#eyeImage,
+#recommendImage {
+  width: 3vw;
+  height: 3vw;
+}
+
+.experienceBubble__icon {
+  font-size: 1.5em;
+  /* margin-left: auto;*/
+}
+.experienceBubbleImage {
+  height: 3vw;
+  width: auto;
+}
+
+/*project buttons*/
+.prButton {
+  padding: 0;
+  margin: 5px;
+  border: none;
+  align-items: center;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.prButton:hover {
+  filter: brightness(85%);
+  /*background: #008168*/
+}
+
+.prButton:active {
+  filter: brightness(60%);
+}
+
+.prButton__text {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 24px;
+  justify-content: center;
+  height: 100%;
+  width: 20vw;
+}
+
+.whiteText {
+  color: #c2d8ec;
+}
+
+.prButton__icon {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 100%;
+  color: #fff;
+}
+
+.prButton__icon {
+  font-size: 1.5em;
+  /* margin-left: auto;*/
+  background: rgba(0, 0, 0, 0.08);
+}
+.prImage {
+  height: 5vw;
+  width: auto;
+}
+
+.acm-slideshow-container {
+  width: 18vw;
+  position: relative;
+  margin: auto;
+}
+/*modal organization*/
+
+/* Slideshow container */
+.slideshow-container {
+  width: 14vw;
+  position: relative;
+  margin: auto;
+}
+ul {
+  margin: 0.5vw;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Hide the images by default */
+.mobileSlides {
+  display: none;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0 0.1vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* The dots/bullets/indicators */
+.mobileDot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0 0.1vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.smartwatch {
+  max-width: 100%;
+  height: auto;
+  width: 40vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  max-width: 100%;
+  width: 30vw;
+  height: 18vw;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 1vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+slidescap {
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-size: 1vw;
+  width: 100%;
+  font-style: italic;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border: 5px solid;
+  text-align: left;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  /*padding: 20px;*/
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*modal organization*/
+
+#homepagefooter {
+  list-style: none;
+  max-width: 100%;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/*pdf object*/
+object {
+  min-height: 40vw;
+}
+
+mobilevid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2vw;
+}
+
+gentext {
+  font-size: 1vw;
+}
+
+button {
+  font-size: 1vw;
+}
+
+school {
+  font-style: bold;
+  font-size: 1.1vw;
+}
+schooldesc {
+  font-style: italic;
+  font-size: 1vw;
+}
+.scroll {
+  background-color: grey;
+  width: 80vw;
+  font-size: 1vw;
+}
+.schoolicon {
+  height: auto;
+  width: 2vw;
+}
+
+titlemodel {
+  /*color: #2861b0;*/
+  font-size: 2.2vw;
+  font-style: bold;
+  text-align: center;
+}
+subheadingmodel {
+  color: #2861b0;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+li {
+  font-size: 1vw;
+}
+
+name {
+  font-style: bold;
+  font-size: 3vw;
+  color: #032747;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+info {
+  font-style: italic;
+  font-size: 1.5vw;
+  color: #032747;
+  text-align: center;
+}
+
+.graphtheorygif {
+  max-width: 100%;
+  width: auto;
+  height: 15vw;
+  border: 2px solid #000000;
+}
+
+.computericon {
+  max-width: 100%;
+  height: auto;
+  width: 8vw;
+}
+
+.profilephoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  width: 15vw;
+}
+
+.graphgif {
+  max-width: 100%;
+  height: auto;
+  width: 25vw;
+}
+
+.rsillustration {
+  max-width: 100%;
+  height: auto;
+  width: 40vw;
+}
+
+.brainlogo {
+  max-width: 100%;
+  height: auto;
+  width: 20vw;
+}
+
+.adamscreenshot {
+  max-width: 100%;
+  height: auto;
+  width: 40vw;
+  border: 2px solid #000501;
+}
+
+.projectlogo {
+  max-width: 100%;
+  height: auto;
+  width: 11vw;
+}
+.reuPoster {
+  max-width: 100%;
+  height: auto;
+  width: 30vw;
+}
+
+.scrollphotos {
+  width: auto;
+  height: 15vw;
+}
+
+.employicon {
+  max-width: 100%;
+  width: 11vw;
+  height: auto;
+}
+
+.footerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw;
+  height: auto;
+}
+.mobilePics {
+  width: 100%;
+  border: 2px solid #000501;
+}
+.coloringbookpage {
+  max-width: 100%;
+  height: auto;
+  width: 35vw;
+}
+.nameheading {
+  display: inline-block;
+  margin: 1em;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 900px) {
+  .prButton {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right:0px;
+  }
+
+  .employRow {
+    display: block;
+  }
+
+  .buttonCol {
+    width: 100%;
+  }
+
+  .purple1 {
+    background: #7184a5;
+  }
+  .row2purple1 {
+    background: #7184a5;
+  }
+  .row1grey {
+    background: #69707e;
+  }
+  .row2grey {
+    background: #69707e;
+  }
+  .datedExperience {
+    height: 30vw;
+  }
+
+  .r1green {
+    background: #4a7777;
+    color: #1b2e2e;
+  }
+  .r2green {
+    background: #4a7777;
+    color: #1b2e2e;
+  }
+  .r3green {
+    background: #4a7777;
+    color: #1b2e2e;
+  }
+
+  .r1blue {
+    background: #2e4d68;
+  }
+  .r2blue {
+    background: #2e4d68;
+  }
+  .r3blue {
+    background: #2e4d68;
+  }
+
+  .prButton__icon {
+    padding: 12px 24px;
+  }
+
+  .expCol {
+    width: 100%;
+  }
+  object {
+    min-height: 120vw;
+  }
+  .nameheading {
+    text-align: center;
+  }
+  .employer,
+  .time {
+    font-size: 3vw;
+  }
+  .empImage {
+    width: 25vw;
+  }
+  .prButton__text {
+    text-align: center;
+    width: 100%;
+    font-size: 3vw;
+  }
+  .experienceBubble__text {
+    text-align: center;
+    width: 100%;
+    font-size: 3.3vw;
+  }
+  .expEmployer {
+    font-size: 2.7vw;
+  }
+
+  .smartwatch {
+    width: 85vw;
+  }
+  iframe {
+    width: 90vw;
+    height: 54vw;
+  }
+
+  .prImage {
+    height: 20vw;
+  }
+  .experienceBubbleImage {
+    height: 15vw;
+  }
+  #eyeImage,
+  #recommendImage {
+    height: 15vw;
+  }
+  .prev,
+  .next {
+    font-size: 4vw;
+  }
+  slidescap {
+    font-size: 4vw;
+  }
+  .coloringbookpage {
+    max-width: 100%;
+    height: auto;
+    width: 85vw;
+  }
+  .empButton {
+    width: 47%;
+  }
+  .mobileDot,
+  .dot {
+    height: 4vw;
+    width: 4vw;
+  }
+  .close {
+    font-size: 8vw;
+  }
+  .reuPoster {
+    width: 80vw;
+  }
+  .slideshow-container {
+    width: 60vw;
+  }
+  .acm-slideshow-container {
+    width: 60vw;
+  }
+  mobilevid {
+    flex-direction: column;
+  }
+  .profiledescription {
+    font-size: 5vw;
+    padding: 3vw;
+    width: 100%;
+  }
+
+  .projectlogo {
+    width: 44vw;
+  }
+  h3 {
+    font-size: 4.8vw;
+  }
+
+  li,
+  gentext,
+  p,
+  schooldesc {
+    font-size: 3.3vw;
+  }
+
+  name {
+    font-size: 12vw;
+  }
+  .model-subtitle {
+    font-size: 4vw;
+  }
+
+  .posTitle {
+    font-size: 3.7vw;
+  }
+
+  subheadingmodel {
+    font-size: 3vw;
+  }
+  .modal-content {
+    width: 95%;
+  }
+
+  titlemodel {
+    font-size: 6vw;
+  }
+  .brainlogo,
+  .rsillustration {
+    width: 80vw;
+  }
+  .graphgif {
+    width: 80vw;
+  }
+  .graphtheorygif {
+    width: 40vw;
+    height: auto;
+  }
+  info {
+    font-size: 5vw;
+  }
+  school {
+    font-size: 4.4vw;
+  }
+
+  button {
+    font-size: 2.5vw;
+  }
+  .adamscreenshot {
+    width: 90vw;
+  }
+  .scroll {
+    font-size: 4vw;
+  }
+  .computericon {
+    width: 30vw;
+  }
+  .profilephoto {
+    width: 60vw;
+  }
+  .employicon {
+    width: 40vw;
+  }
+  .scrollphotos {
+    height: 70vw;
+  }
+  .footerlogo {
+    width: 30vw;
+  }
+  .schoolicon {
+    width: 8vw;
+  }
+}
+
+c {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 1vw;
+  padding: 0.5vw 0.75vw;
+  position: absolute;
+  bottom: -1.5vw;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active,
+.mobileDot:hover {
+  background-color: #717171;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+div.scrollright {
+  white-space: nowrap;
+  width: 80vw;
+  overflow-x: scroll;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  width: 300px;
+  text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: rgb(55 83 114);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: blanchedalmond;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(37 55 75);
+  color: blanchedalmond;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: blanchedalmond;
+  color: rgb(55 83 114);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+profileMobile {
+  max-width: 5%;
+  height: auto;
+}
+
+footer {
+  font-style: bold;
+  font-size: 12px;
+}
+
+ital {
+  font-style: italic;
+}
+
+picture {
+  class: center;
+}
+
+p.solid {
+  border-style: solid;
+}
