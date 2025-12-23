@@ -559,6 +559,8 @@ info {
   max-width: 100%;
   height: auto;
   width: 15vw;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .graphgif {
